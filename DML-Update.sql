@@ -66,5 +66,27 @@ SET urun_id = urun_id+1 where urun_id > 1004
 -- 'Adam Eve' olan firmanın ismi (firma_ismi) ile degistiriniz.
 -- Bu soruda tedarikçiler ve urunler tablosunu yeniden oluşturduk
 update urunler
-set urun_isim = (select firma_ismi from tedarikciler where irtibat_ismi='Adam Eve')
+set urun_isim = (SELECT firma_ismi from tedarikciler where irtibat_ismi='Adam Eve')
 where musteri_isim = 'Ali Bak';
+
+select * from urunler
+
+----------------------------------------------------------------------------------------------
+
+-- Urunler tablosunda laptop satin alan musterilerin ismini, 
+-- firma_ismi Apple’in irtibat_isim'i ile degistirin.
+
+UPDATE urunler
+set musteri_isim = (Select irtibat_ismi from tedarikciler WHERE firma_ismi='Apple' )
+where urun_isim='Laptop'
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
