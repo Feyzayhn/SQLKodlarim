@@ -1,7 +1,7 @@
 -- SELECT - SIMILAR TO - REGEX(Regular Expressions) --
 /*
 SIMILAR TO : Daha karmaşık pattern(kalıp) ile sorgulama işlemi için SIMILAR TO kullanilabilir
-Sadece ProtgreSQL de kullanilir. buyuk kucuk harf onemlidir
+Sadece PostgreSQL de kullanilir. buyuk kucuk harf onemlidir
 
 REGEX : Herhangi bir kod, metin içerisinde istenen yazi veya kod parçasinin aranip bulunmasini saglayan
 kendine ait bir söz dizimi olan bir yapidir. 

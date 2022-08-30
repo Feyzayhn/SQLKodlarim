@@ -68,7 +68,7 @@ commit; -- TRANSACTION dan cıkmak icin kullanilir çıkmazsak sonraki yazacakla
 --savepointten sonra ekledigimiz veride sayaç mantıgı ile caliştigi icin
 --sayacta en son hangi sayida kaldiysa ordan devam eder
 --NOT : PostgreSQL de transaction kullanimi icin 'Begin' komutuyla başlariz sonrasinda tekrar yanlış bir veriyi
---düzeltmek veya biizm icin önemli olan verilerden sonra ekleme yapanilmek icin 'SAVEPOINT savepointismi'
+--düzeltmek veya bizim icin önemli olan verilerden sonra ekleme yapabilmek icin 'SAVEPOINT savepointismi'
 --komutunu kullaniriz ve bu savepointe dönebilmek icin 'ROLLBACK TO savepointismi'
 --komutunu kullaniriz ve rollback çalıştırıldıgında savepoint yazdigimiz satirin üstündeki verileri tabloda bize
 --verir ve son olarak Transaction'i sonlandırmak icin mutlaka 'COMMIT' komutu kullaniriz. MYSQL d
@@ -77,7 +77,7 @@ commit; -- TRANSACTION dan cıkmak icin kullanilir çıkmazsak sonraki yazacakla
 --DML-VERİ İSLEME DİLİ -DELETE
 --DELETE FROM tablo_adi --> Tablo'nun tüm içerigini siler
 --Veriyi seçerek silmek icin WHERE koşulu kullanilir
---DELETE FROM tablo_adı WHERE sutun_adi = veri --> Tablodaki istredigimiz veriyi siler
+--DELETE FROM tablo_adı WHERE sutun_adi = veri --> Tablodaki istedigimiz veriyi siler
 
 CREATE TABLE ogrenciler(
 id int,
